@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Day 6: Semantics</title>
+</head>
+<body>
+    <!Placeholder is an attribute that displays a short hint in the input field.
+     It is used to provide a hint or example of the expected input value.
+     The placeholder text disappears when the user starts typing in the input field.>
+    
+     <h1>Tutorial Student Registration Form</h1>
+     <hr> <br>
+    
+     <form>
+        <summary><h3>Basic Information</h3></summary><details>
+        <br>
+        <strong><label>Full Name <b style="color: rgb(255, 17, 0);">*</b></label></strong>
+        <br>
+        <br>
+        <input type = "text" name = "First Name" placeholder = "First Name" required>
+        <input type = "text" name = "Middle Name" placeholder = "Middle Name">
+        <input type = "text" name = "Last Name" placeholder = "Last Name" required>
+
+        <br>
+        <br><br>
+
+        <strong><label for = "id">Student Number <b style="color: rgb(255, 17, 0);">*</b></label></strong>
+        <input type = "text" id = "id" name = "Student Number" required>
+
+        <strong><label for = "year">Year Level<b style="color: rgb(255, 17, 0);">*</b></label></strong>
+        <input type = "text" id = "year" name = "year" 
+               list = "yearlevels" placeholder = "Please Select Year Level" required>
+        
+        <datalist id = "yearlevels">
+            <option value = "7th Grade">
+            <option value = "8th Grade">
+            <option value = "9th Grade">
+            <option value = "10th Grade">
+            <option value = "11th Grade">
+            <option value = "12th Grade">
+            <option value = "HS Graduate"></option>
+        </datalist>
+
+        <br><br><br>
+
+        <strong><label> Instructional Topic</label></strong> <br><br>
+        <input type = "text" name = "Instructional Topic" 
+               list = "topics"placeholder = "Please Select" required>
+        
+        <datalist id = "topics">
+            <option value = "Algebra">
+            <option value = "Geometry">
+            <option value = "Trignometry">
+            <option value = "Pre-Calculus">
+            <option value = "Basic Calculus">
+            <option value = "Physics">
+            <option value = "Physical Science">
+            <option value = "Land Surveying Basics">
+        </datalist>
+
+        <br><br><br>
+
+        <strong><label for = "email">E-mail <b style = "color:rgb(255, 17, 0);">*</b></label></strong> <br><br>
+        <input type = "email" id = "email" placeholder = "Please Enter Your E-mail" required>
+
+        <br><br><br>
+
+        <strong><label for = "mobile">Mobile Number</label></strong> <br><br>
+        <input type = "tel" id = "mobile" placeholder = "Please Enter a Valid Mobile Number." required>
+
+        <br><br><br>
+
+        <strong><label for = "telephone">Telephone Number</label></strong><br><br>
+        <input type = "text" id = "telephone" >
+
+        <br><br><br>
+
+        <strong><label>Home Address <b style="color: rgb(255, 17, 0);">*</b></label></strong><br><br>
+        <input type = "text" placeholder = "Street Address" required><br><br>
+        <input type = "text" placeholder = "Street Address Line 2"><br><br>
+        <input type = "text" placeholder = "City" required>
+        <input type = "text" placeholder = "State/Province" required><br><br>
+        <input type = "text" placeholder = "Postal / Zip Code" required>
+        <input type = "text" placeholder = "Please Select Country" 
+                list = "countries" required>
+        <datalist id = "countries">
+            <option value = "Philippines">
+            <option value = "United States of America">
+            <option value = "Canada">
+            <option value = "United Kingdom">
+            <option value = "Australia">
+            <option value = "New Zealand">
+            <option value = "Japan">
+            <option value = "South Korea">
+            <option value = "China">
+            <option value = "India">
+        </datalist>
+        </details>
+        
+        <br>
+
+        <summary><h3>Academic Background</h3></summary>
+        <details>
+            <br>
+            <label for = "school">School Name <b style = "color:rgb(255, 17, 0);">*</b></label>
+            <input type = "text" id = "school" placeholder = "Please Enter Your School Name" required>
+        </details>
+
+        <br>
+
+        <summary><h3>Other Details</h3></summary>
+        <details>
+            <br>
+            <label>Resources Available <b style = "color:rgb(255, 17, 0);">*</b></label>
+            <br><br>
+            <input type = "checkbox" id = "Car">
+            <label for = "Car">Car/Transportation</label>
+            <br>
+            <input type = "checkbox" id = "Printer">
+            <label for = "Printer">Printer</label>
+            <br>
+            <input type = "checkbox" id = "Laptop">
+            <label for = "Laptop">Laptop</label>
+            <br>
+            <input type = "checkbox" id = "House">
+            <label for = "House">Event Venue/House</label>
+            <br>
+            <input type = "checkbox" id = "lcd">
+            <label for = "lcd">LCD Projector</label>
+
+            <br><br><br>
+
+            <label for = "comments">Suggestions / Comments</label>
+            <input type = "text" id = "comments" >
+
+        </details>
+        
+        <br><br><br>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>
